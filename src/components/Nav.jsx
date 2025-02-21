@@ -118,12 +118,13 @@ const Nav = ({ cartCount, resetCart }) => {
                         {profile ? (
                             <div className='flex-1 flex justify-end'>
                                 <div className='relative font-montserrat z-[35] w-full'>
-                                    <div className='flex gap-5 -mt-4  items-center bg-white border-b justify-between  border-coral-red px-5 py-2' onClick={toggleLogoutVisibility}>
+                                    <div className='flex max-lg:flex-col max-lg:items-start gap-5 -mt-4 items-center bg-white border-b justify-between border-coral-red px-5 py-2' onClick={toggleLogoutVisibility}>
+                                    <img src={profile.picture} alt="user image" className='max-lg:inline-block hidden h-10 w-10 rounded-full ' />
                                         <div className='flex flex-col justify-around'>
                                             <p className='text-lg font-semibold '>{profile.name}</p>
                                             <p className='text-sm '>{profile.email}</p>
                                         </div>
-                                        <img src={profile.picture} alt="user image" className='h-10 w-10 rounded-full ' />
+                                        <img src={profile.picture} alt="user image" className='max-lg:hidden inline-block h-10 w-10 rounded-full ' />
                                     </div>
                                     <button onClick={logOut} className='cursor-pointer mt-4 justify-self-center flex justify-center items-center gap-2 px-7 py-4 border font-montserrat leading-none rounded-xl w-[90%] whitespace-nowrap font-semibold text-lg bg-coral-red hover:bg-white border-coral-red text-white hover:text-coral-red hover:border-coral-red'> Log Out</button>
                                 </div>

@@ -47,7 +47,7 @@ const ProductDetail = ({ incrementCartCount }) => {
     };
 
     return (
-        <div className='flex flex-col items-center w-full px-20 gap-20 pt-40 pb-20 font-montserrat'>
+        <div className='flex flex-col items-center w-full px-20 max-md:px-10 gap-20 pt-40 pb-20 font-montserrat'>
             <div className="flex w-full max-w-[1300px] gap-10 max-md:flex-col justify-between" >
                 <img src={product.imgURL} alt={product.name} className="max-w-[280px] w-full" />
                 <div className='flex flex-col justify-between gap-10' id='product-detail'>
@@ -71,14 +71,14 @@ const ProductDetail = ({ incrementCartCount }) => {
             <div className='flex flex-col w-full max-w-[1300px] gap-5'>
                 <h3 className='text-3xl max-sm:text-2xl font-semibold'>More Pictures</h3>
                 <div ref={carouselRef} className='flex gap-5 overflow-hidden carousel'>
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
-                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
+                    <img src={product.imgURL} alt={product.name} className="max-w-[300px] max-md:max-w-[150px] w-full" />
                 </div>
                 <div className='flex justify-between'>
                     <img onClick={scrollLeft} src={arrowRight} width={70} alt="arrow left" className='rotate-180 cursor-pointer outline-transparent rounded-full outline hover:outline-coral-red' />
@@ -87,7 +87,7 @@ const ProductDetail = ({ incrementCartCount }) => {
             </div>
             <div className='flex flex-col w-full max-w-[1300px] gap-5'>
                 <h3 className='text-3xl max-sm:text-2xl font-semibold'>More Products</h3>
-                <div className="mt-16 flex gap-10 justify-between max-xl:grid max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+                <div className="mt-16 max-md:mt-4 flex gap-10 justify-between max-xl:grid max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
                     {products
                         .filter(p => p.name !== product.name)
                         .map((product) => (

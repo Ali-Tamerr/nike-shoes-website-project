@@ -65,11 +65,11 @@ const App = () => {
   }
 
   return (
-    <Router basename="/nike-shoes-website-project">
+    <Router>
       <main className="relative">
         <Nav cartCount={cartCount} />
         <Routes>
-          <Route path="/" element={
+          <Route path="/nike-shoes-website-project/" element={
             <>
               <section className="xl:padding-l padding-b max-xl:pt-10">
                 <Hero />
@@ -94,15 +94,15 @@ const App = () => {
               </section>
             </>
           } />
-          <Route path="/product/:productName" element={<ProductDetail incrementCartCount={incrementCartCount} />} />
-          <Route path='/cart' element={
+          <Route path="/nike-shoes-website-project/product/:productName" element={<ProductDetail incrementCartCount={incrementCartCount} />} />
+          <Route path='/nike-shoes-website-project/cart' element={
             <>
               <section className="padding">
                 <Cart cartCount={cartCount} resetCart={resetCart} setCartCount={setCartCount} />
               </section>
             </>
           } />
-          <Route path='/cart/checkout' element={<CheckoutCompleted />} />
+          <Route path='/nike-shoes-website-project/cart/checkout' element={<CheckoutCompleted />} />
           <Route path="*" element={
             <>
               <section className="padding">
@@ -118,7 +118,7 @@ const App = () => {
               </section>
             </>
           } />
-          <Route path='/products' element={
+          <Route path='/nike-shoes-website-project/products' element={
             <section className="padding">
               <ShoesList />
             </section>

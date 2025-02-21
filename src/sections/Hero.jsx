@@ -6,7 +6,10 @@ import ShoeCard from "../components/ShoeCard"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <section id="home"
     className="w-full flex xl:flex-row flex-col 
@@ -25,7 +28,7 @@ const Hero = () => {
             quality comfort, and innovation for
             your active life.
           </p>
-          <Link to={'/products'}>
+          <Link to={'/products'} onClick={handleClick}>
           <Button label="Shop now" iconURL={arrowRight} />
 
           </Link>

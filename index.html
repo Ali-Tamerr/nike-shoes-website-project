@@ -8,14 +8,12 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-  <script>
-    if (sessionStorage.redirect) {
+    <script type="module" src="/src/main.jsx">
+       if (sessionStorage.redirect) {
       const baseUrl = '/nike-shoes-website-project';
       const redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
       window.location.href = baseUrl + redirect;
-    }
-  </script>
+    </script>
+  </body>
 </html>

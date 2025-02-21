@@ -31,7 +31,7 @@ const ShoesList = () => {
               <Button label={addToCartLabel}/>
               </div> */}
 
-                <Link to={`/nike-shoes-website-project/product/${product.name}`} onClick={handleClick}>
+                <Link to={`/product/${product.name}`} onClick={handleClick}>
                   <Button label={"View details"} />
                 </Link>
               </div>

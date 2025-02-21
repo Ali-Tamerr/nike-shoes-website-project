@@ -2,9 +2,9 @@ import { facebook, instagram, shieldTick, support, truckFast, twitter } from "..
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
-    { href: "/nike-shoes-website-project/", label: "About Us" },
+    { href: "/", label: "About Us" },
     { href: "/products", label: "Products" },
-    { href: "/nike-shoes-website-project/", label: "Contact Us" },
+    { href: "/", label: "Contact Us" },
 ];
 
 export const shoes = [
@@ -93,22 +93,22 @@ export const footerLinks = [
     {
         title: "Products",
         links: [
-            { name: "Air Force 1", link: "/nike-shoes-website-project/" },
-            { name: "Air Max 1", link: "/nike-shoes-website-project/" },
-            { name: "Air Jordan 1", link: "/nike-shoes-website-project/" },
-            { name: "Air Force 2", link: "/nike-shoes-website-project/" },
-            { name: "Nike Waffle Racer", link: "/nike-shoes-website-project/" },
-            { name: "Nike Cortez", link: "/nike-shoes-website-project/" },
+            { name: "Air Force 1", link: "/" },
+            { name: "Air Max 1", link: "/" },
+            { name: "Air Jordan 1", link: "/" },
+            { name: "Air Force 2", link: "/" },
+            { name: "Nike Waffle Racer", link: "/" },
+            { name: "Nike Cortez", link: "/" },
         ],
     },
     {
         title: "Help",
         links: [
-            { name: "About us", link: "/nike-shoes-website-project/" },
-            { name: "FAQs", link: "/nike-shoes-website-project/" },
-            { name: "How it works", link: "/nike-shoes-website-project/" },
-            { name: "Privacy policy", link: "/nike-shoes-website-project/" },
-            { name: "Payment policy", link: "/nike-shoes-website-project/" },
+            { name: "About us", link: "/" },
+            { name: "FAQs", link: "/" },
+            { name: "How it works", link: "/" },
+            { name: "Privacy policy", link: "/" },
+            { name: "Payment policy", link: "/" },
         ],
     },
     {

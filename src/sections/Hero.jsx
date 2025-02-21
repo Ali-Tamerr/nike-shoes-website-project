@@ -25,7 +25,7 @@ const Hero = () => {
             quality comfort, and innovation for
             your active life.
           </p>
-          <Link to={'/nike-shoes-website-project/shoes-list'}>
+          <Link to={'/shoes-list'}>
           <Button label="Shop now" iconURL={arrowRight} />
 
           </Link>

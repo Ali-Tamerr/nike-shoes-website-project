@@ -6,7 +6,7 @@ const PopularProductCard = ({...products}) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       };
   return (
-    <Link to={`/nike-shoes-website-project/product/${products.name}`} className="flex flex-1 flex-col items-center max-sm:w-full max-w-[300px] w-full cursor-pointer outline outline-2 outline-offset-[10px] outline-transparent hover:outline-coral-red max-sm:p-3 max-lg:p-0 rounded-lg" onClick={handleClick}>
+    <Link to={`/product/${products.name}`} className="flex flex-1 flex-col items-center max-sm:w-full max-w-[300px] w-full cursor-pointer outline outline-2 outline-offset-[10px] outline-transparent hover:outline-coral-red max-sm:p-3 max-lg:p-0 rounded-lg" onClick={handleClick}>
         <a href="#product-detail">
         <img src={products.imgURL} alt={products.name}
         className="max-w-[280px] w-full"/>

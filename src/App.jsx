@@ -65,7 +65,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <Router basename="/nike-shoes-website-project">
       <main className="relative">
         <Nav cartCount={cartCount} />
         <Routes>

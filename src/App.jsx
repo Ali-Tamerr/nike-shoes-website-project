@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom'
 import { products } from './constants';
 import Button from './components/Button.jsx';
 import { star } from './assets/icons/index.js';
-import useAddToCartLabel from './hooks/useAddToCartLabel';
 import ShoesList from './sections/ShoesList.jsx';
 import CheckoutCompleted from './sections/CheckoutCompleted.jsx';
 
@@ -65,7 +64,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <Router basename='/nike-shoes-website-project'>
       <main className="relative">
         <Nav cartCount={cartCount} />
         <Routes>

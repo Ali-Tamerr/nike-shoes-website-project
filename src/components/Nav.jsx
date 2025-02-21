@@ -25,6 +25,9 @@ const Nav = ({ cartCount, resetCart }) => {
     const toggleMobileNav = () => {
         setMobileNavVisible(!isMobileNavVisible);
     };
+    const handleClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     const handleOpenModal = () => setModalOpen(true);
     const handleCloseModal = () => setModalOpen(false);
@@ -38,7 +41,7 @@ const Nav = ({ cartCount, resetCart }) => {
                     </Link>
                 </div>
 
-                <Link to='/cart' className={`${!profile ? "block" : "hidden"} flex items-center relative mx-5 rounded-full border border-transparent hover:border-coral-red px-5 py-1`}>
+                <Link to='/cart' onClick={handleClick} className={`${!profile ? "block" : "hidden"} flex items-center relative mx-5 rounded-full border border-transparent hover:border-coral-red px-5 py-1`}>
                     <p className={`w-5 h-5 p-3 font-sans text-white bg-coral-red rounded-full flex justify-center items-center text-center text-md mb-[4px] mr-[-3px] ${cartCount === 0 ? 'hidden' : ''}`}>
                         {cartCount}
                     </p>

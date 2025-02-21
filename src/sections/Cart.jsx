@@ -65,7 +65,7 @@ const Cart = ({ cartCount, resetCart, setCartCount }) => {
                         <div className={`outline outline-3 z-50 outline-coral-red px-12 py-16 rounded-xl flex flex-col bg-white items-center gap-16  transition-all ${isDivOpened ? "opacity-100" : "opacity-0"}`}>
                             <p className='text-xl font-semibold text-black'>Are you sure to submit?</p>
                             <div className='flex gap-8 items-center'>
-                                <Link to={"/cart/checkout"} onClick={resetCart}>
+                                <Link to={"/nike-shoes-website-project/cart/checkout"} onClick={resetCart}>
                                     <Button label={"Submit"} />
                                 </Link>
                                 <div onClick={OpenCloseDiv}>

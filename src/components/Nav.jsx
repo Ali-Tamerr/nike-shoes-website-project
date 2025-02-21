@@ -33,12 +33,12 @@ const Nav = ({ cartCount, resetCart }) => {
         <header className='padding-x py-8 fixed z-20 w-full bg-white border-b border-coral-red shadow-md font-montserrat'>
             <nav className='flex justify-between items-center max-container'>
                 <div className='flex-1'>
-                    <Link to="/" className='inline-block'>
+                    <Link to="/nike-shoes-website-project/" className='inline-block'>
                         <img src={headerLogo} alt="Logo" width={130} height={29} />
                     </Link>
                 </div>
 
-                <Link to='/cart' className={`${!profile ? "block" : "hidden"} flex items-center relative mx-5 rounded-full border border-transparent hover:border-coral-red px-5 py-1`}>
+                <Link to='/nike-shoes-website-project/cart' className={`${!profile ? "block" : "hidden"} flex items-center relative mx-5 rounded-full border border-transparent hover:border-coral-red px-5 py-1`}>
                     <p className={`w-5 h-5 p-3 font-sans text-white bg-coral-red rounded-full flex justify-center items-center text-center text-md mb-[4px] mr-[-3px] ${cartCount === 0 ? 'hidden' : ''}`}>
                         {cartCount}
                     </p>
@@ -63,7 +63,7 @@ const Nav = ({ cartCount, resetCart }) => {
                         </li>
                     )}
                 </ul>
-                <Link to='/cart' className={`${profile ? "block" : "hidden"}  flex items-center relative mx-5 rounded-full border border-transparent hover:border-coral-red px-5 py-1`}>
+                <Link to='/nike-shoes-website-project/cart' className={`${profile ? "block" : "hidden"}  flex items-center relative mx-5 rounded-full border border-transparent hover:border-coral-red px-5 py-1`}>
                     <p className={`w-5 h-5 p-3 font-sans text-white bg-coral-red rounded-full flex justify-center items-center text-center text-md mb-[4px] mr-[-3px] ${cartCount === 0 ? 'hidden' : ''}`}>
                         {cartCount}
                     </p>

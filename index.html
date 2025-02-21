@@ -5,10 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/nike-shoes-website-project/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike</title>
-    <script type="module" crossorigin src="/nike-shoes-website-project/assets/index-C_IGuqrV.js"></script>
+    <script type="module" crossorigin src="/nike-shoes-website-project/assets/index-BMHqUj7O.js"></script>
     <link rel="stylesheet" crossorigin href="/nike-shoes-website-project/assets/index-DHitWsWH.css">
   </head>
   <body>
     <div id="root"></div>
   </body>
+  <script>
+    if (sessionStorage.redirect) {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      window.location.href = redirect;
+    }
+  </script>
 </html>

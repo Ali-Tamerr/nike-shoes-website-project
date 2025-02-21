@@ -45,7 +45,7 @@ const Nav = ({ cartCount, resetCart }) => {
                     <p className={`w-5 h-5 p-3 font-sans text-white bg-coral-red rounded-full flex justify-center items-center text-center text-md mb-[4px] mr-[-3px] ${cartCount === 0 ? 'hidden' : ''}`}>
                         {cartCount}
                     </p>
-                    <img src={shoppingCart} alt="shopping cart" className='h-[40px]' />
+                    <img src={shoppingCart} alt="Shopping cart" className='h-[40px]' />
                 </Link>
                 <ul className='flex justify-around items-stretch bg-transparent w-200 flex-1 h-12 border border-coral-red rounded-full max-lg:hidden '>
                     {navLinks.map((item, index) => (

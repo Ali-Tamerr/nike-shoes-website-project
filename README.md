@@ -1,7 +1,7 @@
 # Nike Shoes Website With ReactJS + Vite + Tailwindcss
 
 - This is my first project made with a CSS framework after mastering pure CSS and learning many new techniques from it.
-- Thanks to @adrianhajdin video tutorial of TailwindCSS and making a Nike Landiing page using this framework, After I've finished writing the code to be like his project i decided to continue working and adding many features to it to be for me a project that is competitive enough compared to projects made by other developers.
+- Thanks to [@adrianhajdin] video tutorial of TailwindCSS and making a Nike Landiing page using this framework, After I've finished writing the code to be like his project i decided to continue working and adding many features to it to be for me a project that is competitive enough compared to projects made by other developers.
 - You can view the details of the products, Add them to cart or remove them from it & Confirm your checkout after you are finished reviewing all the products to be bought, And also you can sign in with your google account.
 - It's a small preview of how a shopping website is, yet contains most of the basics of a shopping website.
 

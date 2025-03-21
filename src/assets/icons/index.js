@@ -10,7 +10,7 @@ import shieldTick from './shield-tick.svg'
 import star from './star.svg'
 import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
-import X from "./Image.png"
+import X from "./image.png"
 import shoppingCart from "./shoppingCart.svg"
 import deleteIcon from "./delete.svg"
 import removeIcon from "./remove.svg"

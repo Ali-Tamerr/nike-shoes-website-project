@@ -70,7 +70,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <>
-              <section className="xl:padding-l padding-b max-xl:pt-10">
+              <section className="xl:padding-l pt-12 max-xl:pt-10">
                 <Hero />
               </section>
               <section className="padding">

@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
 export default {
   content: [
     "./index.html",
@@ -45,7 +43,4 @@ export default {
       }
     },
   },
-  plugins: [
-    tailwindcss(),
-  ],
 }

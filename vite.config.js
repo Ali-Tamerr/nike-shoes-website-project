@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite'
+import vercel from 'vite-plugin-vercel';
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), vercel()],
   base: process.env.VITE_BASE_PATH || "/nike-shoes-website-project/",
+  server: {
+    port: process.env.PORT,
+  },
   build: {
     outDir: 'dist',
   },

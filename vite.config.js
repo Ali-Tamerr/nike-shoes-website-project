@@ -1,15 +1,16 @@
-import { defineConfig } from 'vite'
-import vercel from 'vite-plugin-vercel';
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(), vercel()],
-  base: process.env.VITE_BASE_PATH || "/nike-shoes-website-project/",
-  server: {
-    port: process.env.PORT,
-  },
-  build: {
-    outDir: 'dist',
-  },
-})
+export default defineConfig(({ command, mode }) => {
+  const isGitHub = process.env.GITHUB_ACTIONS === "true"; // Detect GitHub deployment
+  return {
+    plugins: [react()],
+    base: isGitHub ? "/nike-shoes-website-project/" : "/", // GitHub vs. Vercel
+    server: {
+      port: process.env.PORT || 5173,
+    },
+    build: {
+      outDir: "dist",
+    },
+  };
+});

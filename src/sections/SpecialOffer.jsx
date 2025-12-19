@@ -4,7 +4,7 @@ const SpecialOffer = () => {
   return (
     <section className="lg:h-[500px] flex w-full justify-end items-center lg:text-end gap-[20px] max-lg:flex-col max-lg:gap-10">
       <div>
-        <img className="h-[550px] max-lg:h-[360px]" src={offer} alt="" />
+        <img className="h-[150px] max-md:h-[100px]" src={offer} alt="" />
       </div>
       <div className="flex justify-between w-full flex-col h-[70%] max-lg:gap-4">
         <h3 className="text-4xl xl:text-[60px] font-palanquin font-bold"><span className="text-coral-red">Special</span> Offer</h3>
